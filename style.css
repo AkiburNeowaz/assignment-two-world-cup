@@ -7,8 +7,6 @@ header {
     margin-top: 50px;
 }
 
-
-
 .header-part {
     display: flex;
     width: 1321px;
@@ -37,7 +35,7 @@ header {
 }
 
 .half-width img {
-    width: 92%;
+    width: 93%;
     padding-left: 24px;
 }
 
@@ -58,7 +56,6 @@ header {
 }
 
 .side-bar {
-    /* position: absolute; */
     width: 312px;
     height: 312px;
     background-color: #161616;
@@ -81,8 +78,6 @@ header {
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 30px;
-
-
 }
 
 .blog-buttom {
@@ -91,20 +86,23 @@ header {
 }
 
 .blogs {
-    width: 312px;
-    height: 362px;
-    margin-top: 130px;
-    margin-left: 24px;
-    border: 1px solid #E8E8E8;
-    border-radius: 10px;
-}
-
-.blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 130px;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
 }
+
+.blog {
+    width: 312px;
+    height: 362px;
+    margin-left: 24px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+
+}
+
+
 
 .blogs-button {
     font-weight: 500;
@@ -124,4 +122,38 @@ header {
 .icon {
     display: flex;
     column-gap: 30px;
+}
+
+/* footer style */
+
+footer {
+    background-color: #161616;
+    height: 444px;
+
+}
+
+footer h1 {
+    padding-top: 130px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 1320px;
+}
+
+.footer-nav {
+    text-align: center;
+
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #B9B9B9;
+    padding-left: 40px;
+
+
 }
