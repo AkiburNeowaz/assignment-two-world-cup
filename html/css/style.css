@@ -18,7 +18,6 @@ header {
 }
 
 .half-width {
-
     width: 50%;
     color: white;
 }
@@ -62,9 +61,6 @@ header {
     border-radius: 10px;
     margin-left: 140px;
     margin-top: 130px;
-}
-
-.menu {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -78,6 +74,11 @@ header {
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 30px;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: #161616;
 }
 
 .blog-buttom {
@@ -154,6 +155,92 @@ hr {
     text-decoration: none;
     color: #B9B9B9;
     padding-left: 40px;
+}
 
+.social-icon {
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+/* mabile part */
+
+@media screen and (max-width: 767) {
+    .header-part {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        background-color: #161616;
+        border-radius: 30px;
+        padding: 50px 140px 0px 140px;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .match-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blogs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 130px;
+        margin-left: 140px;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
+
+}
+
+/* Tablet Part */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+
+    header {
+        margin-left: 140px;
+        margin-top: 50px;
+    }
+
+    .header-part {
+        width: 100%;
+        height: 100%;
+    }
+
+    .match-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-width h1 {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+
+    }
+
+
+    .blogs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 130px;
+        margin-left: 140px;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
+
+    footer {
+        width: 100%;
+    }
 
 }
