@@ -48,6 +48,16 @@ header {
     font-size: 20px;
 }
 
+.button a {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.button:hover {
+    font-size: 150%;
+}
+
 
 /* main part css  */
 .match-list {
