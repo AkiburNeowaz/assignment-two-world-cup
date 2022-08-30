@@ -173,31 +173,47 @@ hr {
     padding-top: 20px;
 }
 
-/* mabile part */
+/*----------------
+ mabile part
+ ------------------*/
 @media only screen and (max-width:767px) {
     .header {
         margin-left: 0px;
         margin-top: 50px;
-
     }
 
     .half-width {
-        width: 100%;
+        margin-top: 0%;
+        width: 80%;
         color: white;
         font-size: 20px;
     }
 
+    .half-width-length {
+        padding-bottom: 20px;
+    }
+
+    .half-width p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
     .half-width h1 {
         color: #FFFFFF;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 40px;
     }
 
     .half-width img {
-        margin-top: -10px;
-        width: 93%;
+        width: 100%;
         padding-left: 0px;
     }
+
+    .match-list {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 
 
@@ -207,22 +223,64 @@ hr {
         height: auto;
         background-color: #161616;
         border-radius: 30px;
-        padding: 50px 140px 0px 140px;
+        padding: 20px 40px 0px 40px;
+    }
+
+    .header-part img {
+        width: 100%;
+    }
+
+    .side-bar {
+
+        background-color: transparent;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 140px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icon {
+        flex-direction: row;
+        padding-left: 100px;
+
+
     }
 }
 
-/* Tablet Part */
+/* ------------
+Tablet Part
+--------------- */
 @media screen and (min-width:768px) and (max-width:1024px) {
 
 
     header {
-        margin-left: 140px;
+        margin-left: 0px;
         margin-top: 50px;
+    }
+
+    .side-bar {
+        height: 100px;
+        width: 80%;
+        flex-direction: row;
+        background-color: transparent;
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    .menu-button {
+        margin-left: 20px;
     }
 
     .header-part {
         width: 100%;
         height: 100%;
+        padding: 0%;
     }
 
     .match-list {
@@ -234,6 +292,11 @@ hr {
         color: #FFFFFF;
         font-weight: 500;
         font-size: 30px;
+
+    }
+
+    .half-width-length {
+        padding-left: 20px;
     }
 
     .menu {
@@ -248,8 +311,8 @@ hr {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 130px;
-        margin-left: 140px;
+        margin-top: 0px;
+        margin-left: 0px;
         grid-column-gap: 24px;
         grid-row-gap: 24px;
     }
